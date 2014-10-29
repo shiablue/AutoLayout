@@ -19,9 +19,8 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)onReloadButtonTapped:(id)sender {
+    self.textLabel.text = [NSString stringWithFormat:@"%@%@",self.textLabel.text, self.textLabel.text];
 }
 
 @end
